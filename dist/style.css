@@ -19,7 +19,7 @@ p, h1, h2, h3, h4, h5 {
   --black:#151E29;
   --pure:#FDFDFC;
   --primary:#1333D4;
-  --orange: #ECECE8;
+  --mid_p: #F8F8F5;
 }
 
 .container {
@@ -39,7 +39,7 @@ p, h1, h2, h3, h4, h5 {
   text-transform: capitalize;
   padding: 12px 16px;
   border-radius: 100px;
-  font-weight: 600;
+  font-weight: 700;
   cursor: pointer;
   background: none;
 }
@@ -152,6 +152,40 @@ header .navBer .logoNmenu .nav ul {
 .hero .right .image img {
   width: 100%;
   height: auto;
+}
+
+.news {
+  background: var(--mid_p);
+  padding: 120px 0;
+}
+.news .mainNewsSec {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fill, minmax(620px, 1fr));
+}
+.news .mainNewsSec .leftCard .image, .news .mainNewsSec .rightCard .image {
+  width: 100%;
+}
+.news .mainNewsSec .leftCard .image img, .news .mainNewsSec .rightCard .image img {
+  width: 100%;
+  height: auto;
+}
+.news .mainNewsSec .leftCard .text, .news .mainNewsSec .rightCard .text {
+  padding: 2rem;
+}
+.news .mainNewsSec .leftCard .text span, .news .mainNewsSec .rightCard .text span {
+  color: var(--primary);
+  font-weight: 600;
+  font-size: 20px;
+}
+.news .mainNewsSec .leftCard .text h3, .news .mainNewsSec .rightCard .text h3 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-top: 12px;
+  margin-bottom: 8px;
+}
+.news .mainNewsSec .leftCard .text button, .news .mainNewsSec .rightCard .text button {
+  margin-top: 48px;
 }
 
 @media (max-width: 900px) {

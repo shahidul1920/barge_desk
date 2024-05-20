@@ -66,3 +66,39 @@ header{
             }
         }
 }
+
+.news{
+    background: var(--mid_p);
+    padding: 120px 0;
+    .mainNewsSec{
+        display: grid;
+        gap: 2rem;
+        grid-template-columns: repeat(auto-fill, minmax(620px,1fr));
+        .leftCard, .rightCard{
+            .image{
+                width: 100%;
+                img{
+                    width: 100%;
+                    height: auto;
+                }
+            }
+            .text{
+                padding: 2rem;
+                span{
+                    color: var(--primary);
+                    font-weight: 600;
+                    font-size: 20px;
+                }
+                h3{
+                    font-size: 24px;
+                    font-weight: 600;
+                    margin-top: 12px;
+                    margin-bottom: 8px;
+                }
+                button{
+                    margin-top: 48px;
+                }
+            }
+        }
+    }
+}
