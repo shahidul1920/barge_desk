@@ -71,6 +71,7 @@ header{
     background: var(--mid_p);
     padding: 120px 0;
     .mainNewsSec{
+        width: auto;
         display: grid;
         gap: 2rem;
         grid-template-columns: repeat(auto-fill, minmax(620px,1fr));

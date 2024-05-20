@@ -159,6 +159,7 @@ header .navBer .logoNmenu .nav ul {
   padding: 120px 0;
 }
 .news .mainNewsSec {
+  width: auto;
   display: grid;
   gap: 2rem;
   grid-template-columns: repeat(auto-fill, minmax(620px, 1fr));
