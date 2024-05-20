@@ -118,6 +118,42 @@ header .navBer .logoNmenu .nav ul {
   font-weight: 600;
 }
 
+.hero {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(620px, 1fr));
+  gap: 52px;
+  align-items: center;
+  margin: 85px auto;
+}
+.hero .left .text {
+  color: var(--black);
+}
+.hero .left .text h1 {
+  font-size: 61px;
+  line-height: 120%;
+}
+.hero .left .text h1 span {
+  color: var(--primary);
+}
+.hero .left .text p {
+  font-size: 20px;
+  line-height: 140%;
+  color: var(--black);
+  margin-top: 10px;
+}
+.hero .left .buttons {
+  margin-top: 48px;
+}
+.hero .right .image {
+  width: 100%;
+  height: auto;
+}
+.hero .right .image img {
+  width: 100%;
+  height: auto;
+}
+
 @media (max-width: 900px) {
   .container {
     width: 100%;

@@ -26,3 +26,43 @@ header{
         }
     }
 }
+
+
+
+.hero{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(620px,1fr));
+        gap: 52px;
+        align-items: center;
+        margin: 85px auto;
+        .left .text{
+            color: var(--black);
+            h1{
+                font-size: 61px;
+                line-height: 120%;
+                span{
+                    color: var(--primary);
+                }
+            }
+            p{
+                font-size: 20px;
+                line-height: 140%;
+                color: var(--black);
+                margin-top: 10px;
+            }
+        }
+        .left .buttons{
+            margin-top: 48px;
+        }
+        .right{
+            .image{
+                width: 100%;
+                height: auto;
+                img{
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+}
