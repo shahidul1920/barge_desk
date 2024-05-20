@@ -1,0 +1,28 @@
+header{
+    .navBer{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 12px 65px;
+        .logoNmenu{
+            display: flex;
+            align-items: center;
+            gap: 80px;
+            .logo a{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 8px;
+            }
+            .nav{
+                ul{
+                    list-style: none;
+                    display: flex;
+                    gap: 2rem;
+                    font-size: 16px;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+}
