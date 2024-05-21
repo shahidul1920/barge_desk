@@ -103,3 +103,186 @@ header{
         }
     }
 }
+
+.features{
+    width: 100%;
+    padding-top: 105px;
+    padding-bottom: 105px;
+    .container{
+        a{
+            text-decoration: none;
+            color: var(--primary);
+            font-weight: 600;
+            span{
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+                margin-top: 56px;
+            }
+        }
+        .text{
+            width: 640px;
+            h2{
+                line-height: 120%;
+                font-size: 32px;
+                color: var(--black);
+                font-weight: 600;
+                margin-bottom: 42px;
+            }
+        }
+        .cards{
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(420px,1fr));
+            gap: 24px;
+            .card{
+                padding: 32px;
+                border: 1px solid #D1D1D1;
+                span{
+                    color: var(--primary);
+                    line-height: 140%;
+                    font-size: 20px;
+                }
+                h3{
+                    font-size: 20px;
+                    line-height: 140%;
+                    font-weight: 600;
+                    margin-top: 12px;
+                }
+            }
+        }
+    }
+}
+
+.titleSection{
+    background: url(../images/barge.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding-top: 245px;
+    padding-bottom: 85px;
+    h2{
+        max-width: 640px;
+        line-height: 140%;
+        font-weight: 700;
+        font-size: 48px;
+        color: var(--pure);
+    }
+}
+
+.contactForm{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(700px,1fr));
+    .left, .right{
+        //width: 50%;
+        display: grid;
+        place-items: center;
+    }
+    .left{
+        padding: 165px 75px;
+        background: var(--primary);
+        .text{
+            max-width: 550px;
+            color: var(--pure);
+            h2{
+                line-height: 140%;
+                font-weight: 700;
+                font-size: 48px;
+                margin-bottom: 20px;
+            }
+            p{
+                font-size: 16px;
+                line-height: 140%;
+            }
+        }
+
+    }
+    .right{
+        form{
+            max-width: 420px;
+            display: grid;
+            gap: 16px;
+            margin-top: 75px;
+            button{
+                width: 150px;
+            }
+        }
+        .inputs{
+            display: flex;
+            flex-direction: column;
+            span{
+                font-size: 16px;
+                font-weight: 600;
+                color: var(--black);
+            }
+            input{
+                width: 420px;
+                height: 48px;
+                padding: 5px;
+                outline: none;
+                border: 1px solid #9DA3AB;
+            }
+
+        }
+        .inputsRadio{
+            margin: 20px 0;
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+            p{
+                //max-width: 350px;
+                width: 100%;
+            }
+            input{
+                width: 20px;
+                height: 20px;
+                border-radius: 1px;
+            }
+        }
+    }
+}
+
+footer{
+    padding: 148px 64px;
+    background: var(--mid_p);
+    .mainSection{
+        display: grid;
+        grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+        margin: 0 auto;
+        .logo{
+            width: 86px;
+            height: auto;
+        }
+        .info{
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            span{
+                font-weight: 600;
+                line-height: 140%;
+            }
+            &:last-child{
+                width: 350px;
+                .icons{
+                    display: flex;
+                    //flex-direction: column;
+                    gap: 1.5rem;
+                    .icn{
+                        display: flex;
+                        gap: 1rem;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                }
+            }
+        }
+    }
+    .termsSection{
+        margin-top: 80px;
+        display: flex;
+        gap: 2rem;
+        align-items: center;
+        justify-content: center;
+    }
+}
