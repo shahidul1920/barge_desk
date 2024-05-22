@@ -397,3 +397,17 @@ footer{
         margin: 0 auto;
     }
 }
+
+//Cargo providers page styling
+
+.providers{
+    background: url(../images/Rectangle4.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    .container{
+        span{
+            color: var(--orange);
+        }
+    }
+}

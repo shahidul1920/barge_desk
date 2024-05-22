@@ -469,6 +469,16 @@ footer .termsSection {
   margin: 0 auto;
 }
 
+.providers {
+  background: url(../images/Rectangle4.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.providers .container span {
+  color: var(--orange);
+}
+
 @media (max-width: 900px) {
   .container {
     width: 100%;
