@@ -15,7 +15,7 @@ p, h1, h2, h3, h4, h5 {
 }
 
 :root {
-  --gray: #b5afafa7;
+  --orange: #FF5F1F;
   --black:#151E29;
   --pure:#FDFDFC;
   --primary:#1333D4;
@@ -361,6 +361,112 @@ footer .termsSection {
   gap: 2rem;
   align-items: center;
   justify-content: center;
+}
+
+.job {
+  background-image: url(../images/Rectangle15.png);
+}
+.job span {
+  color: var(--orange);
+  font-weight: 600;
+  line-height: 140%;
+}
+
+.featureSec .container {
+  display: grid;
+  gap: 75px;
+  padding: 100px 64px;
+}
+.featureSec .text {
+  font-size: 32px;
+  max-width: 860px;
+  font-weight: 600;
+  line-height: 140%;
+}
+.featureSec .cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1rem;
+}
+.featureSec .cards .card {
+  padding: 30px;
+  border: 1px solid var(--black);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 12px;
+  font-size: 20px;
+  line-height: 140%;
+}
+
+.moreFeatures {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.moreFeatures .container {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+.moreFeatures .container .box {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
+  box-shadow: 1px 2px 11px rgba(128, 128, 128, 0.747);
+}
+.moreFeatures .container .box .text {
+  padding: 48px;
+}
+.moreFeatures .container .box .text h2 {
+  line-height: 140%;
+  font-weight: 600;
+  font-size: 24px;
+  color: var(--primary);
+}
+.moreFeatures .container .box .text p {
+  margin-top: 8px;
+  margin-bottom: 40px;
+  font-weight: 400;
+  line-height: 140%;
+  color: var(--black);
+}
+.moreFeatures .container .box .text a {
+  text-decoration: none;
+}
+.moreFeatures .container .box .text a span {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.moreFeatures .container .box .text a span p {
+  color: var(--primary);
+  font-weight: 700;
+  line-height: 130%;
+  font-size: 14px;
+  margin: 0;
+}
+.moreFeatures .container .box .image {
+  padding: 20px 80px;
+  background: var(--mid_p);
+}
+.moreFeatures .container .box .image img {
+  width: 100%;
+  height: auto;
+}
+
+.textTitle {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  text-align: center;
+}
+.textTitle h2 {
+  font-weight: 600;
+  line-height: 140%;
+  font-size: 32px;
+  margin-bottom: 8px;
+}
+.textTitle p {
+  max-width: 860px;
+  margin: 0 auto;
 }
 
 @media (max-width: 900px) {

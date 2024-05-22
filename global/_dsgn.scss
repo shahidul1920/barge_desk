@@ -286,3 +286,114 @@ footer{
         justify-content: center;
     }
 }
+
+
+// "For shippers page styling"
+
+.job{
+    background-image: url(../images/Rectangle15.png);
+    span{
+        color: var(--orange);
+        font-weight: 600;
+        line-height: 140%;
+    }
+}
+
+.featureSec{
+    .container{
+        display: grid;
+        gap: 75px;
+        padding: 100px 64px;
+    }
+    .text{
+        font-size: 32px;
+        max-width: 860px;
+        font-weight: 600;
+        line-height: 140%;
+    }
+    .cards{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(280px,1fr));
+        gap: 1rem;
+        .card{
+            padding: 30px;
+            border: 1px solid var(--black);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 12px;
+            font-size: 20px;
+            line-height: 140%;
+        }
+    }
+}
+
+.moreFeatures{
+    padding-top: 120px;
+    padding-bottom: 120px;
+    .container{
+        display: flex;
+        flex-direction: column;
+        gap: 80px;
+        .box{
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(600px,1fr));
+            box-shadow: 1px 2px 11px rgba(128, 128, 128, 0.747);
+            .text{
+                padding: 48px;
+                h2{
+                    line-height: 140%;
+                    font-weight: 600;
+                    font-size: 24px;
+                    color: var(--primary);
+                }
+                p{
+                    margin-top: 8px;
+                    margin-bottom: 40px;
+                    font-weight: 400;
+                    line-height: 140%;
+                    color: var(--black);
+                }
+                a{
+                    text-decoration: none;
+                    span{
+                        display: flex;
+                        gap: 1rem;
+                        align-items: center;
+                        p{
+                            color: var(--primary);
+                            font-weight: 700;
+                            line-height: 130%;
+                            font-size: 14px;
+                            margin: 0;
+                        }
+                    }
+                }
+            }
+            .image{
+                padding: 20px 80px;
+                background: var(--mid_p);
+                img{
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+    }
+}
+
+.textTitle{
+    padding-top: 200px;
+    padding-bottom: 200px;
+    text-align: center;
+    h2{
+        font-weight: 600;
+        line-height: 140%;
+        font-size: 32px;
+        margin-bottom: 8px;
+    }
+    p{
+        max-width: 860px;
+        margin: 0 auto;
+    }
+}
