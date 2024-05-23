@@ -124,6 +124,11 @@ a {
   left: 0;
 }
 
+.navColor {
+  color: var(--primary);
+  text-decoration: none;
+}
+
 .slideSection {
   background: var(--mid_p);
   padding-bottom: 6rem;
@@ -268,6 +273,9 @@ a {
   #controls {
     display: none;
   }
+  #bullets {
+    margin: 0;
+  }
 }
 .slide_Cstm {
   width: 100%;
@@ -309,6 +317,7 @@ a {
 .slide_Cstm .right p {
   margin: 0;
   margin-top: 3rem;
+  line-height: 140%;
 }
 
 header {
@@ -403,6 +412,7 @@ header .hamb_toggle span {
 }
 .news .mainNewsSec .leftCard, .news .mainNewsSec .rightCard {
   background: var(--pure);
+  box-shadow: 1px 2px 11px rgba(128, 128, 128, 0.308);
 }
 .news .mainNewsSec .leftCard .image, .news .mainNewsSec .rightCard .image {
   width: 100%;
@@ -824,6 +834,60 @@ footer .termsSection {
   color: var(--primary);
 }
 
+.workProcess .container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+.workProcess .container .text .headline {
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%;
+  margin-bottom: 50px;
+}
+.workProcess .container .text .txtD {
+  display: grid;
+  gap: 1rem;
+}
+.workProcess .container .text .txtD .textDtls {
+  cursor: pointer;
+  padding-bottom: 0.8rem;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.342);
+}
+.workProcess .container .text .txtD .textDtls p {
+  display: none;
+}
+.workProcess .container .text .txtD .active h3 {
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%;
+  color: var(--primary);
+}
+.workProcess .container .text .txtD .active h4 {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%;
+  color: var(--primary);
+  margin-bottom: 8px;
+}
+.workProcess .container .text .txtD .active p {
+  display: block;
+  max-width: 500px;
+  font-size: 16px;
+}
+.workProcess .container .image {
+  width: 100%;
+}
+.workProcess .container .image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 @media (max-width: 1090px) {
   .container {
     width: 100%;
@@ -884,6 +948,14 @@ footer .termsSection {
   }
   .featureSec .text {
     font-size: 28px;
+  }
+}
+@media (max-width: 900px) {
+  .workProcess .container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .workProcess .container .image {
+    display: none;
   }
 }
 @media (max-width: 700px) {
@@ -981,7 +1053,13 @@ footer .termsSection {
   .mission .container .text {
     grid-template-columns: repeat(1, 2fr);
   }
-  .slideSection {
-    display: none;
+  .slideSection .container {
+    padding: 0;
+  }
+  .slideSection #bullets {
+    margin: 0;
+  }
+  .slideSection .slide_Cstm .right p {
+    margin-top: 1rem;
   }
 }/*# sourceMappingURL=style.css.map */

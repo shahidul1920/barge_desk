@@ -114,6 +114,11 @@ a{
     left: 0;
 }
 
+.navColor{
+    color: var(--primary);
+    text-decoration: none;
+}
+
 
 // slider
 
@@ -254,6 +259,9 @@ a{
     #controls{
         display: none;
     }
+    #bullets{
+        margin: 0;
+    }
  }
 
 
@@ -293,4 +301,5 @@ a{
  .slide_Cstm .right p{
     margin: 0;
     margin-top: 3rem;
+    line-height: 140%;
  }
