@@ -23,7 +23,7 @@ p, h1, h2, h3, h4, h5 {
 }
 
 .container {
-  width: 1440px;
+  max-width: 1440px;
   margin: 0px auto;
   padding: 0 65px;
 }
@@ -83,9 +83,6 @@ a {
   height: 42px;
 }
 .hamb_toggle span {
-  display: block;
-  width: 25px;
-  height: 2px;
   background: var(--black);
   transition: all ease 0.3s;
 }
@@ -126,13 +123,12 @@ header .hamb_toggle {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: var(--primary);
 }
 header .hamb_toggle span {
   display: block;
   width: 20px;
   height: 2px;
-  background: var(--pure);
+  background: var(--black);
 }
 
 .hero {
@@ -657,6 +653,16 @@ footer .termsSection {
   .contactForm .left {
     padding: 100px 15px;
   }
+  .contactForm .left .text h2 {
+    font-size: 28px;
+  }
+  .btnNav .btn_s, .btnNav .btn_p {
+    display: none;
+  }
+  .contactForm .right form {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
   .features .container .cards {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
@@ -665,8 +671,32 @@ footer .termsSection {
   .features .container .cards .card {
     padding: 20px;
   }
+  .featureSec .container {
+    gap: 75px;
+    padding: 100px 24px;
+  }
+  .titleSection h2 {
+    font-size: 28px;
+  }
+  .featureSec .text {
+    font-size: 24px;
+  }
+  .moreFeatures {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  .moreFeatures .container {
+    gap: 40px;
+  }
   .moreFeatures .container .box {
-    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-template-columns: repeat(1, 2fr);
+  }
+  .moreFeatures .container .box .text {
+    padding: 20px;
+  }
+  .moreFeatures .container .box .image {
+    padding: 10px 10px;
+    background: var(--mid_p);
   }
   .textTitle {
     padding-top: 100px;
@@ -675,6 +705,10 @@ footer .termsSection {
   footer {
     padding: 2rem 0;
   }
+  footer .mainSection .logo {
+    width: 66px;
+    height: auto;
+  }
   footer .mainSection .info:last-child .icons {
     display: grid;
     flex-direction: column;
@@ -682,5 +716,20 @@ footer .termsSection {
     gap: 0.8rem;
     align-items: normal;
     justify-content: start;
+  }
+  .aboutTitle {
+    text-align: center;
+    padding-bottom: 80px;
+    padding-top: 80px;
+  }
+  .aboutTitle h2 {
+    font-size: 38px;
+  }
+  .mission .container {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  .aboutTitle h2 {
+    font-size: 38px;
   }
 }/*# sourceMappingURL=style.css.map */

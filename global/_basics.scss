@@ -12,7 +12,7 @@
     --mid_p: #F8F8F5;
 }
 .container{
-    width: 1440px;
+    max-width: 1440px;
     margin: 0px auto;
     padding: 0 65px;
 }
@@ -68,9 +68,6 @@ a{
     display: none;
     height: 42px;
     span{
-        display: block;
-        width: 25px;
-        height: 2px;
         background: var(--black);
         transition: all ease .3s;
         &:nth-child(2){
