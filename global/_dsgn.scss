@@ -94,6 +94,7 @@ header{
         gap: 2rem;
         grid-template-columns: repeat(2,1fr);
         .leftCard, .rightCard{
+            background: var(--pure);
             .image{
                 width: 100%;
                 img{
@@ -342,10 +343,19 @@ footer{
         padding: 100px 64px;
     }
     .text{
-        font-size: 32px;
-        max-width: 860px;
-        font-weight: 600;
-        line-height: 140%;
+        h3{
+            font-size: 32px;
+            max-width: 860px;
+            font-weight: 600;
+            line-height: 140%;
+        }
+        p{
+            margin-top: 2rem;
+            max-width: 600px;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 140%;
+        }
     }
     .cards{
         display: grid;
