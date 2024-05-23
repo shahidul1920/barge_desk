@@ -28,10 +28,6 @@ p, h1, h2, h3, h4, h5 {
   padding: 0 65px;
 }
 
-.none {
-  display: none;
-}
-
 .btn {
   border: none;
   outline: none;
@@ -88,6 +84,44 @@ a {
 }
 .hamb_toggle span:nth-child(2) {
   margin: 0.3rem 0;
+}
+
+.none, .dnone {
+  display: none;
+}
+
+.toggleMenu {
+  position: fixed;
+  border: 1px solid red;
+  width: 100%;
+  height: 100vh;
+  background: var(--pure);
+  z-index: 1000;
+  padding-top: 48px;
+  padding-bottom: 48px;
+  left: -1700px;
+  transition: all 0.4s ease-in;
+}
+.toggleMenu .nav ul {
+  list-style: none;
+  text-transform: capitalize;
+  font-size: 24px;
+  line-height: 140%;
+  font-weight: 600;
+}
+.toggleMenu .nav ul li {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-top: 1px solid rgba(202, 202, 202, 0.685);
+}
+.toggleMenu .buttons {
+  flex-direction: column;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.active {
+  left: 0;
 }
 
 header {
@@ -301,6 +335,7 @@ header .hamb_toggle span {
 }
 .contactForm .right form {
   max-width: 420px;
+  width: 100%;
   display: grid;
   gap: 16px;
   margin-top: 75px;
@@ -324,6 +359,11 @@ header .hamb_toggle span {
   padding: 5px;
   outline: none;
   border: 1px solid #9DA3AB;
+}
+.contactForm .right .inputs textarea {
+  width: 100%;
+  height: 120px;
+  padding: 10px;
 }
 .contactForm .right .inputsRadio {
   margin: 20px 0;
@@ -731,11 +771,17 @@ footer .termsSection {
   .aboutTitle h2 {
     font-size: 38px;
   }
+  .aboutTitle h2 {
+    margin-top: 2rem;
+  }
   .mission .container {
     padding-top: 80px;
     padding-bottom: 80px;
   }
   .aboutTitle h2 {
     font-size: 38px;
+  }
+  .mission .container .text {
+    grid-template-columns: repeat(1, 2fr);
   }
 }/*# sourceMappingURL=style.css.map */

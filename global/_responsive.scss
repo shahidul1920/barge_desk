@@ -160,11 +160,17 @@
         }
     }
 
+    .aboutTitle h2{
+        margin-top: 2rem;
+    }
     .mission .container {
         padding-top: 80px;
         padding-bottom: 80px;
     }
     .aboutTitle h2{
         font-size: 38px;
+    }
+    .mission .container .text{
+        grid-template-columns: repeat(1,2fr)
     }
 }
