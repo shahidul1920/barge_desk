@@ -1,6 +1,56 @@
-@media (max-width:900px){
+@media (max-width:1090px){
     .container{
         width: 100%;
-        height: auto;
+        padding: 0 45px;
     }
+    .btn{
+        padding: 8px 10px;
+    }
+    header .navBer {
+        padding: 12px 45px;
+      }
+    header .navBer .logoNmenu .logo a{
+        h2{
+            font-size: 16px;
+        }
+        img{
+            width: 30px;
+        }
+    }
+    header .navBer .logoNmenu .nav ul{
+        display: none;
+    }
+    .hero {
+        grid-template-columns: repeat(1, 2fr);
+        gap: 52px;
+        margin: 85px auto;
+      }
+
+      .news {
+        padding: 70px 0;
+      }
+      .news .mainNewsSec {
+        width: 100%;
+        gap: 2rem;
+        grid-template-columns: repeat(1, 2fr);
+      }
+      .titleSection {
+        padding-top: 88px;
+        padding-bottom: 85px;
+    }
+    .contactForm{
+        grid-template-columns: repeat(1,2fr);
+    }
+    .contactForm .left {
+        padding: 165px 15px;
+    }
+    footer .mainSection {
+        grid-template-columns: repeat(2, 2fr);
+        gap: 2rem;
+      }
+      footer .mainSection .info:last-child .icons {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+      }
 }

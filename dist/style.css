@@ -110,6 +110,10 @@ header .navBer .logoNmenu .logo a {
   justify-content: center;
   gap: 8px;
 }
+header .navBer .logoNmenu .logo a img {
+  width: 100%;
+  height: auto;
+}
 header .navBer .logoNmenu .nav ul {
   list-style: none;
   display: flex;
@@ -121,7 +125,7 @@ header .navBer .logoNmenu .nav ul {
 .hero {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(620px, 1fr));
+  grid-template-columns: repeat(2, 1fr);
   gap: 52px;
   align-items: center;
   margin: 85px auto;
@@ -162,7 +166,7 @@ header .navBer .logoNmenu .nav ul {
   width: auto;
   display: grid;
   gap: 2rem;
-  grid-template-columns: repeat(auto-fill, minmax(620px, 1fr));
+  grid-template-columns: repeat(2, 1fr);
 }
 .news .mainNewsSec .leftCard .image, .news .mainNewsSec .rightCard .image {
   width: 100%;
@@ -206,7 +210,7 @@ header .navBer .logoNmenu .nav ul {
   margin-top: 56px;
 }
 .features .container .text {
-  width: 640px;
+  max-width: 640px;
 }
 .features .container .text h2 {
   line-height: 120%;
@@ -256,7 +260,7 @@ header .navBer .logoNmenu .nav ul {
 .contactForm {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(700px, 1fr));
+  grid-template-columns: repeat(2, 1fr);
 }
 .contactForm .left, .contactForm .right {
   display: grid;
@@ -285,6 +289,7 @@ header .navBer .logoNmenu .nav ul {
   display: grid;
   gap: 16px;
   margin-top: 75px;
+  margin-bottom: 75px;
 }
 .contactForm .right form button {
   width: 150px;
@@ -321,17 +326,22 @@ header .navBer .logoNmenu .nav ul {
 }
 
 footer {
+  width: 100%;
   padding: 148px 64px;
   background: var(--mid_p);
 }
 footer .mainSection {
+  width: 100%;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-template-columns: repeat(4, 1fr);
   margin: 0 auto;
 }
 footer .mainSection .logo {
   width: 86px;
   height: auto;
+}
+footer .mainSection .logo img {
+  width: 100%;
 }
 footer .mainSection .info {
   display: flex;
@@ -562,9 +572,56 @@ footer .termsSection {
   color: var(--primary);
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1090px) {
   .container {
     width: 100%;
-    height: auto;
+    padding: 0 45px;
+  }
+  .btn {
+    padding: 8px 10px;
+  }
+  header .navBer {
+    padding: 12px 45px;
+  }
+  header .navBer .logoNmenu .logo a h2 {
+    font-size: 16px;
+  }
+  header .navBer .logoNmenu .logo a img {
+    width: 30px;
+  }
+  header .navBer .logoNmenu .nav ul {
+    display: none;
+  }
+  .hero {
+    grid-template-columns: repeat(1, 2fr);
+    gap: 52px;
+    margin: 85px auto;
+  }
+  .news {
+    padding: 70px 0;
+  }
+  .news .mainNewsSec {
+    width: 100%;
+    gap: 2rem;
+    grid-template-columns: repeat(1, 2fr);
+  }
+  .titleSection {
+    padding-top: 88px;
+    padding-bottom: 85px;
+  }
+  .contactForm {
+    grid-template-columns: repeat(1, 2fr);
+  }
+  .contactForm .left {
+    padding: 165px 15px;
+  }
+  footer .mainSection {
+    grid-template-columns: repeat(2, 2fr);
+    gap: 2rem;
+  }
+  footer .mainSection .info:last-child .icons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
   }
 }/*# sourceMappingURL=style.css.map */
