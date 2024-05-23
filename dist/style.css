@@ -429,7 +429,7 @@ footer .termsSection {
 }
 
 .job {
-  background-image: url(../images/Rectangle15.png);
+  background-image: url(../images/tanker-1.jpg);
 }
 .job span {
   color: var(--orange);
@@ -535,7 +535,7 @@ footer .termsSection {
 }
 
 .providers {
-  background: url(../images/Rectangle4.png);
+  background: url(../images/inlandBarging.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
