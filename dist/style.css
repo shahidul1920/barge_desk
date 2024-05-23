@@ -90,6 +90,9 @@ a {
   margin: 0.3rem 0;
 }
 
+header {
+  border-bottom: 1px solid rgba(128, 128, 128, 0.26);
+}
 header .navBer {
   display: flex;
   align-items: center;
@@ -247,6 +250,9 @@ header .hamb_toggle span {
   line-height: 140%;
   font-weight: 600;
   margin-top: 12px;
+}
+.features .container .cards .card:last-child span {
+  color: var(--orange);
 }
 
 .titleSection {
