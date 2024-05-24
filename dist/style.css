@@ -92,15 +92,14 @@ a {
 
 .toggleMenu {
   position: fixed;
-  border: 1px solid red;
   width: 100%;
   height: 100vh;
   background: var(--pure);
   z-index: 1000;
   padding-top: 48px;
   padding-bottom: 48px;
-  left: -1700px;
-  transition: all 0.4s ease-in;
+  left: -3700px;
+  transition: all 0.3s ease;
 }
 .toggleMenu .nav ul {
   list-style: none;
@@ -124,9 +123,23 @@ a {
   left: 0;
 }
 
+.sm-view {
+  display: none;
+}
+
+.actOn {
+  display: block;
+}
+
 .navColor {
   color: var(--primary);
   text-decoration: none;
+}
+
+.modiColor {
+  color: var(--primary);
+  font-weight: 600;
+  font-size: 18px;
 }
 
 .slideSection {
@@ -504,6 +517,40 @@ header .hamb_toggle span {
   font-weight: 700;
   font-size: 48px;
   color: var(--pure);
+}
+
+.basicDetails {
+  margin: 6rem auto;
+}
+.basicDetails .container {
+  width: 100%;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+.basicDetails .container .leftText {
+  max-width: 500px;
+}
+.basicDetails .container .leftText .textDtls {
+  cursor: pointer;
+  padding: 20px 0;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.26);
+}
+.basicDetails .container .leftText .textDtls h4 {
+  font-weight: 400;
+  font-size: 20px;
+  transition: all 0.3s ease;
+}
+.basicDetails .container .leftText .active h4 {
+  font-weight: 600;
+}
+.basicDetails .container .rightText .text {
+  display: grid;
+  gap: 1rem;
+  transition: all 0.3s ease;
+}
+.basicDetails .container .rightText .text p, .basicDetails .container .rightText .text span {
+  transition: all 0.3s ease;
 }
 
 .contactForm {
@@ -956,6 +1003,15 @@ footer .termsSection {
   }
   .workProcess .container .image {
     display: none;
+  }
+  .basicDetails .container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .basicDetails .container .rightText {
+    display: none;
+  }
+  .basicDetails .container .leftText .textDtls h4 {
+    margin-bottom: 1rem;
   }
 }
 @media (max-width: 700px) {

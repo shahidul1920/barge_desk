@@ -75,6 +75,18 @@
     .workProcess .container .image{
         display: none;
     }
+    .basicDetails .container {
+        grid-template-columns: repeat(1, 1fr);
+      }
+      .basicDetails .container .rightText{
+        display: none;
+      }
+    //   .sm-view{
+    //     display: block;
+    //   }
+      .basicDetails .container .leftText .textDtls h4 {
+        margin-bottom: 1rem;
+      }
 
 }
 

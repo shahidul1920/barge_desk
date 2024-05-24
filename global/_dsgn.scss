@@ -195,6 +195,44 @@ header{
     }
 }
 
+
+.basicDetails{
+    margin: 6rem auto;
+    .container{
+        width: 100%;
+        display: grid;
+        gap: 2rem;
+        grid-template-columns: repeat(2,1fr);
+        .leftText{
+            max-width: 500px;
+            .textDtls{
+                cursor: pointer;
+                padding:20px 0;
+                border-bottom: 1px solid rgba(128, 128, 128, 0.26);
+                h4{
+                    font-weight: 400;
+                    font-size: 20px;
+                    transition: all .3s ease;
+                }
+            }
+            .active{
+                h4{
+                    font-weight: 600;
+                }
+            }            
+        }
+        .rightText{
+            .text{
+                display: grid;
+                gap: 1rem;
+                transition: all .3s ease;
+                p,span{
+                    transition: all .3s ease;
+                }
+            }
+        }
+    }
+}
 .contactForm{
     width: 100%;
     display: grid;
