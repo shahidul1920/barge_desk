@@ -80,6 +80,8 @@ header{
                 img{
                     width: 100%;
                     height: auto;
+                    border: 3px solid var(--black);
+                    border-radius: 20px;
                 }
             }
         }
@@ -127,7 +129,7 @@ header{
 .features{
     width: 100%;
     padding-top: 105px;
-    padding-bottom: 105px;
+    padding-bottom: 90px;
     .container{
         a{
             text-decoration: none;
@@ -313,6 +315,15 @@ header{
     }
 }
 
+.contact{
+    .contactMain{
+        background-image: url(../images/rRectangle16.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+}
+
 footer{
     width: 100%;
     padding: 148px 64px;
@@ -367,7 +378,7 @@ footer{
 // "For shippers page styling"
 
 .job{
-    background-image: url(../images/tanker-1.jpg);
+    background-image: url(../images/db-c.jpg);
     span{
         color: var(--orange);
         font-weight: 600;
@@ -468,8 +479,8 @@ footer{
 }
 
 .textTitle{
-    padding-top: 200px;
-    padding-bottom: 200px;
+    padding-top: 100px;
+    padding-bottom: 100px;
     text-align: center;
     h2{
         font-weight: 600;
@@ -486,10 +497,11 @@ footer{
 //Cargo providers page styling
 
 .providers{
-    background: url(../images/inlandBarging.jpg);
+    background: url(../images/barge.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    background-position: center;
     .container{
         span{
             color: var(--orange);

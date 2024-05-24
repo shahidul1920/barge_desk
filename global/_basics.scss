@@ -122,7 +122,14 @@ a{
     color: var(--primary);
     text-decoration: none;
 }
-
+.actOn{
+    display: none;
+}
+@media (max-width:700px){
+    .actOn{
+        display: block;
+    }
+}
 .modiColor{
     color: var(--primary);
     font-weight: 600;
@@ -136,6 +143,7 @@ a{
     background: var(--mid_p);
     padding-bottom: 6rem;
     padding-top: 6rem;
+    display: none;
 }
 #slider {
     margin: 0px auto;
