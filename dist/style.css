@@ -965,6 +965,7 @@ footer .termsSection {
 }
 .workProcess .container .image {
   width: 100%;
+  max-height: 550px;
 }
 .workProcess .container .image img {
   width: 100%;

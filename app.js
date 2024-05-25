@@ -1,7 +1,7 @@
 let hambToggle = document.querySelector('.hamb_toggle');
 let small_d_menu = document.querySelector('.toggleMenu');
 hambToggle.addEventListener('click', function(){
-    hambToggle.classList.toggle('actn')
+    hambToggle.classList.toggle(' ')
     small_d_menu.classList.toggle('active')
 })
 
@@ -23,6 +23,14 @@ textDtlsElements.forEach(textDtl => {
         imageElement.src = './images/t-2.jpg';
       } else if (this.id === 'step4') {
         imageElement.src = './images/t2.jpg';
+      }
+
+      if (this.id === 'step11') {
+        imageElement.src = './images/brg1 (2).jpeg';
+      } else if (this.id === 'step21') {
+        imageElement.src = './images/brg1 (1).png';
+      } else if (this.id === 'step31') {
+        imageElement.src = './images/brg1 (1).jpeg';
       }
 
       let cost = document.querySelector('.cost');
