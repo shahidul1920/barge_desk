@@ -74,6 +74,22 @@ a{
     }
 }
 
+.actn{
+    span{
+        transition: all .3s ease;
+        transform-origin: 9px 1px;
+        &:first-child{
+            transform: rotate(45deg);
+        }
+        &:nth-child(2){
+            display: none;
+        }
+        &:last-child{
+            transform: rotate(-45deg);
+        }
+    }
+}
+
 .none,.dnone{
     display: none;
 }
