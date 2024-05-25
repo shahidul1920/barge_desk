@@ -29,7 +29,6 @@ header{
                     li{
                         a{
                             transition:all .3s ease;
-                            color: var(--black);
                             &:hover{
                                 color: var(--primary);
                             }

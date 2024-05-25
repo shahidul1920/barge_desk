@@ -394,7 +394,6 @@ header .navBer .logoNmenu .nav ul {
 }
 header .navBer .logoNmenu .nav ul li a {
   transition: all 0.3s ease;
-  color: var(--black);
 }
 header .navBer .logoNmenu .nav ul li a:hover {
   color: var(--primary);
